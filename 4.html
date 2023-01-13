@@ -1,0 +1,38 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+          let array1 = [1,2,3,6,8,1,6,3,2,1,0,4] 
+          let array2 = ['one', 'two','three']
+
+          function bubbleSort(array1, array2) {
+                let swapped;
+
+                do {
+                    swapped = false;
+                    console.log(array1);
+                    array1.forEach((item, index) => {
+                    if (item > array1[index + 1]) {00
+                        let temp = item;
+                        array1[index] = array1[index + 1];
+                        array1[index + 1] = temp;
+                        swapped = true;
+                    }
+                    })
+                } while (swapped);
+
+                let arraystr = array1.concat(array2);
+                return arraystr
+                }
+            
+           
+        
+
+        console.log(bubbleSort(array1, array2))
+        </script>
+    </body>
+</html>
+
+
