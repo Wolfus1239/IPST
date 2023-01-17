@@ -1,0 +1,32 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+          class Worker {
+            constructor(name, surname, rate, days) {
+              this.name = name;
+              this.surname = surname;
+              this.rate = rate;
+              this.days = days;
+            }
+            one(){
+              console.log(this.name, this.surname, this.rate, this.days)
+            }
+            getSalary(){
+              let zp = this.rate * this.days
+              console.log(zp)
+            }
+          }
+          let clas = new Worker(); 
+
+          let rab1 = new Worker('Krol', 'Krolov', 2000, 24);
+          rab1.one();
+          rab1.getSalary();
+          
+        </script>
+    </body>
+</html>
+
+
