@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+        let obj1 = { a: 1, b: 1 }
+              let obj2 = { a: 1, b: 1 }
+              
+              function comparison(obj1, obj2) {
+                  for (let asd in obj1) {
+                      if (obj1.hasOwnProperty(asd) && (obj1[asd] !== obj2[asd])) {
+                          return false
+                      } 
+
+                      if (obj1.hasOwnProperty(asd) && (obj1[asd] == obj2[asd])) {
+                          return true
+                      }
+                  }
+              }
+              
+            console.log(comparison(obj1, obj2))
+           
+        </script>
+    </body>
+</html>
+
+
