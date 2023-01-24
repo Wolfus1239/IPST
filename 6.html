@@ -4,14 +4,18 @@
 
     <body>
         <script>
-          let event1 = ["01:15","02:00"]
-          let event2 = ["02:00","03:00"]
-          var event3 = event1.concat(event2);
-          console.log(event3)
-          for(let i = 1; i < event3.length; i++){
-            if(event3[0] == event3[i]){
-              console.log('АААА')
-            }
+          const event1 = ["01:15","02:00"]
+          const event2 = ["02:00","03:00"]
+          let event3 = event1.concat(event2);
+          let cache
+
+          for (let i = 0; i < event3.length; i++){
+              cache = event3[i];              
+              for (let j = i+1; j < event3.length; j++){
+                  if (cache == event3[j]){
+                  console.log(`ошибка: две задачи в ${cache}`);
+                  }
+              }
           }
         </script>
     </body>
